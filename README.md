@@ -58,8 +58,6 @@ Projekt możemy uruchomić na 2 sposoby.
 
 
 ### Dodatkowe Uwagi, informacje i podziękowania.
-Dołączam do projektu bazę pytań (stąd duża waga) ponieważ oryginalnie pliki video od gov.pl były w formacie wmv, którego niestety nie da się odtworzyć w przeglądarce,
-co zmusiło mnie do konwersji wszystkich nagrań video do formatu mp4, ponando musiałem zmienić w pliku csv z pytaniami nazwy plików na te z poprawnym rozszerzeniem.
 Oryginalnie całość wizualizacji ważyła 8.4 GB, a po konwersji do formatu mp4 mamy 3.4 GB
 
 Jeżeli ktoś chciałby zachostować tę, że stronę proszę o uprzedni kontakt ze mną.
