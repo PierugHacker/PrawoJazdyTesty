@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+{% block title %}Pytanie {{questionNumber}}{% endblock %} 
+{% block onload %}loadMedia();{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/question.css') }}">
+    <script> 
+        let correctAnswer = {{correctAnswer}};
+        let media = "{{url_for('media.sendMedia', path=media)}}";
+    </script>
+    <script src="{{ url_for('static', filename='js/question.js') }}"></script>
+
+
+    <div id="text">{{questionNumber}}. {{questionText}}</div>
+
+    <div id="wrapper">
+        <div id="media">
+
+        </div>
+    </div>
+ 
+
+    <div id="odpowiedzi">
+        {% if yesNoQuestion == 1 %}
+            <!-- YES/NO Question -->
+            <!-- 1 --> <div> <button class="odp" id="a" onclick="answer(0);">Tak</button> </div> 
+            <!-- 2 --> <div> <button class="odp" id="b" onclick="answer(1);">Nie</button> </div>
+            <!-- 3 --> <div> <button class="odp" id="c" style="visibility: hidden;"></button> </div>
+        {% else %}
+            <!-- 3 Choice question -->
+            <!-- 1 --> <div> <button class="odp" id="a" onclick="answer(0);">{{answerA}}</button> </div> 
+            <!-- 2 --> <div> <button class="odp" id="b" onclick="answer(1);">{{answerB}}</button> </div>
+            <!-- 3 --> <div> <button class="odp" id="c" onclick="answer(2);">{{answerC}}</button> </div>
+        {% endif %}
+    </div>
+
+    <div id="dol">
+        <div><button id="kolejne-pytanie" onclick="nextQuestion();">Następne pytanie</button></div>
+    </div>
+
+{% endblock %}

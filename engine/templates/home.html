@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+{% block title %}Egzamin teoretyczny z prawa jazdy{% endblock %} 
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+
+<div id="tytol">
+    Egzamin teoretyczny na prawo jazdy
+</div>
+
+<div id="kategorie">
+    <div>
+        <button class="btn" id="AM" onclick="selectCategory('AM');">Kategoria AM</button>
+        <button class="btn" id="A1" onclick="selectCategory('A1');">Kategoria A1</button> 
+        <button class="btn" id="A2" onclick="selectCategory('A2');">Kategoria A2</button> 
+        <button class="btn" id="A" onclick="selectCategory('A');">Kategoria A</button> 
+        <button class="btn" id="B1" onclick="selectCategory('B1');">Kategoria B1</button> 
+        <button class="btn" id="B" onclick="selectCategory('B');">Kategoria B</button> 
+        <button class="btn" id="BE" onclick="selectCategory('B+E');">Kategoria B+E</button> 
+        <button class="btn" id="C" onclick="selectCategory('C');">Kategoria C</button>
+        <button class="btn" id="C1" onclick="selectCategory('C1');">Kategoria C1</button> 
+        <button class="btn" id="C1E" onclick="selectCategory('C1+E');">Kategoria C1+E</button> 
+    </div>
+
+    <div> 
+        <button class="btn" id="CE" onclick="selectCategory('C+E');">Kategoria C+E</button> 
+        <button class="btn" id="D" onclick="selectCategory('D');">Kategoria D</button> 
+        <button class="btn" id="D1" onclick="selectCategory('D1');">Kategoria D1</button> 
+        <button class="btn" id="D1E" onclick="selectCategory('D1+E');">Kategoria D1+E</button> 
+        <button class="btn" id="DE" onclick="selectCategory('D+E');">Kategoria D+E</button>
+        <button class="btn" id="T" onclick="selectCategory('T');">Kategoria T</button> 
+     </div>
+</div>
+
+{% endblock %}

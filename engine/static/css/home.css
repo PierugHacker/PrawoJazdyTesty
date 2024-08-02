@@ -1,0 +1,34 @@
+* {
+    font-family: Calibri;
+}
+
+
+#tytol { 
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+#kategorie {
+    text-align: center;
+}
+
+.btn {
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: #00a6ff;;
+    margin: 0.2em;
+    padding: 0.1em;
+
+}
+
+.btn:hover {
+    background-color: #0077ff;
+}
+
+.btn:active {
+    background-color: #0037ff;
+}
