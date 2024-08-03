@@ -38,9 +38,9 @@ Projekt możemy uruchomić na 2 sposoby.
   
   <b>3</b> W folderze projektu uruchamiamy plik (dwukrotym kliknięciem) main.pyw lub wpisumemy
   
-    ```sh
+    
     python3 main.pyw
-    ```
+    
   
   Jeżeli zdecydujemy się na wpisanie komendy zamiast dwukrotnego kliknięcia to zobaczymy następujący obraz
   
